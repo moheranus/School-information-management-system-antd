@@ -1,0 +1,30 @@
+.subjectInput .ant-input {
+  padding: 4px 11px;
+  color: rgba(0, 0, 0, 0.88);
+  font-size: 17px;
+
+  position: relative;
+  display: inline-block;
+  width: 90%;
+  height: 45px;
+  margin-left: 5%;
+}
+.subjectInput p {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  margin-left: 50px;
+  margin-top: -12px;
+  background-color: #fff;
+  color: #7f8fa6;
+  font-weight: 600;
+  font-family: "Ubuntu", sans-serif;
+}
+.subjectContainer .ant-tabs .ant-tabs-ink-bar {
+  position: absolute;
+  background: blueviolet;
+  pointer-events: none;
+  border: 2px solid blueviolet;
+}

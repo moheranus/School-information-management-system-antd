@@ -1,0 +1,159 @@
+.classAdd {
+  display: grid;
+  grid-template-columns: 1.3fr 1.3fr 1.3fr;
+  /* grid-template-columns: repeat(auto-fill, minmax(400px, max-content)) 1.3fr 1.3fr; */
+  grid-template-rows: 9.8fr 1.1fr 0.1fr;
+  gap: 0px 10px;
+  grid-template-areas:
+    "AddClass classList classList"
+    "AddClass classList classList"
+    ". . .";
+}
+.AddClass {
+  grid-area: AddClass;
+}
+.classList {
+  grid-area: classList;
+}
+
+.AddClass {
+  border-radius: 5px;
+  padding-bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.classList {
+  border-radius: 5px;
+  padding-bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.classList::before {
+  content: "";
+  position: absolute;
+  width: 20%;
+  height: 4px;
+  border-top-left-radius: 10px;
+  background-color: blueviolet;
+
+  margin-top: -5px;
+}
+
+.AddClass::before {
+  content: "";
+  position: absolute;
+  width: 10%;
+  height: 4px;
+  border-top-left-radius: 10px;
+  /* background-color: blueviolet; */
+
+  margin-top: -5px;
+}
+.classList h2 {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 30px;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: "Ubuntu", sans-serif;
+}
+.classList h2::after {
+  content: "";
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 7px;
+
+  background-color: blueviolet;
+}
+.AddClass h2 {
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: "Ubuntu", sans-serif;
+}
+.AddClass h2::after {
+  content: "";
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 7px;
+
+  background-color: blueviolet;
+}
+.classForm {
+  margin-top: 60px;
+  /* padding-top: "90px"; */
+}
+.classForm p {
+  font-weight: 600;
+  font-family: "Ubuntu", sans-serif;
+  position: absolute;
+  padding: 10px;
+  /* margin-left: 90px; */
+  margin-top: 30px;
+  background-color: #fff;
+  font-size: 1rem;
+  color: #7f8fa6;
+  z-index: 1;
+  padding: 0;
+}
+
+/* .classForm .ant-input {
+  margin-top: 40px;
+  width: 90%;
+  margin-left: 5%;
+  border: 2px solid #0078aa;
+  height: 55px;
+  font-weight: 600;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  color: #2c3333;
+} */
+.classForm .ant-select-selector {
+  width: 100%;
+  height: 48px !important;
+  padding: 7px 11px !important;
+}
+.classActions {
+  margin-left: 25px;
+}
+.classActions p {
+  font-weight: 600;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+}
+.classActions p span {
+  font-size: 25px;
+  color: red;
+}
+.classBtnTwo {
+  margin-top: 25px;
+  float: right;
+  margin-right: 20px;
+}
+.classBtnTwo Button {
+  font-weight: 600;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px;
+  margin-left: 20px;
+}
+.classCheckBox {
+  display: grid;
+}
+
+.checkBoxList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.checkBoxList CheckBox {
+  margin-top: 10px;
+}

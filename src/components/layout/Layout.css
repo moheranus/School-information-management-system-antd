@@ -1,0 +1,29 @@
+
+
+
+.ant-layout-sider-trigger{
+display: none;
+}
+
+.trigger{
+    /* margin-top: -7px; */
+    margin-top: 10px;
+    margin-left: 15px;
+    font-size: 35px;
+    color:#3B3486;
+    
+}
+
+.studentDetailTable{
+    margin: 30px;
+    padding-bottom: 50px;
+}
+.ant-table-wrapper .ant-table-thead > tr > th, :where(.css-dev-only-do-not-override-1n7nwfa).ant-table-wrapper .ant-table-thead > tr > td {
+    position: relative;
+    color: rgba(46, 39, 39, 0.88);
+    font-weight: 600;
+    text-align: start;
+    background: #E5E0FF;
+    border-bottom: 1px solid #f0f0f0;
+    transition: background 0.2s ease;
+  }

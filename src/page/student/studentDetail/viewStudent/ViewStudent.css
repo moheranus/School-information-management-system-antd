@@ -1,0 +1,253 @@
+.viewStudent {
+}
+.viewStudentCont {
+  display: grid;
+  grid-template-columns: 0.7fr 2fr 0.1fr;
+  grid-template-rows: 1.7fr 0.3fr 1.7fr;
+  gap: 15px 20px;
+  grid-template-areas:
+    "profileCard profileInfo profileInfo"
+    "siblingTitle profileInfo profileInfo"
+    "profileCard2 profileInfo profileInfo";
+}
+.profileCard {
+  grid-area: profileCard;
+}
+.profileCard2 {
+  grid-area: profileCard2;
+}
+.profileInfo {
+  grid-area: profileInfo;
+}
+.siblingTitle {
+  grid-area: siblingTitle;
+}
+
+.profileCard {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.profileCard::before {
+  content: "";
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10px;
+  height: 5px;
+  border-top-left-radius: 10px;
+  background-color: blueviolet;
+  transition: all 2s;
+}
+.profileCard:hover::before {
+  width: 20.51%;
+}
+.profileInfo {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.siblingTitle {
+  background-color: #003865;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; */
+}
+.profileInfo::before {
+  content: "";
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10px;
+  height: 2px;
+  border-top-left-radius: 10px;
+  background-color: blueviolet;
+  transition: all 2s;
+}
+
+.profileInfo:hover::before {
+  width: 63%;
+}
+
+.gardian {
+  margin-top: 30px;
+  background-color: #003865;
+}
+.gardianskewed {
+  /* top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0; */
+  width: 100%;
+  height: 100%;
+  background: #2c3e50;
+  z-index: 0;
+  /* transform: skewY(.2deg); */
+  transform-origin: top right;
+  color: #fff;
+}
+.siblingTitle h2 {
+  font-size: 25px;
+  font-family: "poppins";
+  font-weight: 800;
+  /* color: #344D67; */
+  color: #fff;
+}
+
+/* STUDENT CARD STYLE STATRTS HERE  */
+
+/* 
+CARD STYLE */
+
+.teacherBlock {
+  padding: 0 20px 20px 10px;
+}
+
+.card {
+  margin-top: 10px;
+  margin-left: 10px;
+  /* width: 300px; */
+  /* border: 2px solid #4070F4; */
+  border: 2px solid #3b3486;
+  /* border-radius: 25px; */
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  /* background-color: rgb(85, 35, 35); */
+  background-color: #fff;
+}
+.card-content .info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-content .info .result {
+  margin-left: 20px;
+}
+.card-content .info .Action p {
+  font-size: 17px;
+  font-family: "poppins";
+  font-weight: 500;
+  color: #525e75;
+}
+.card-content .info .result p {
+  font-size: 17px;
+  font-family: "poppins";
+  font-weight: 500;
+  color: #677481;
+}
+.image-content,
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+.image-content {
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #3b3486;
+  border-radius: 25px 25px 0 25px;
+}
+.overlay::before,
+.overlay::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #3b3486;
+}
+.overlay::after {
+  border-radius: 0 25px 0 0;
+  background-color: #fff;
+}
+.card-image {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  /* border-radius: 50%; */
+  /* background: #FFF; */
+  padding: 3px;
+}
+.card-image .card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border: 4px solid #4439b6;
+}
+.name {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+.description {
+  font-size: 14px;
+  color: #707070;
+  text-align: center;
+}
+.button {
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  padding: 8px 16px;
+  background-color: #4070f4;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button:hover {
+  background: #3066fa;
+}
+
+/* STUDENT CARD STYLE ENDS HERE  */
+
+.profileTabs {
+  margin-left: 23px;
+}
+
+/* PROFILE TAB INFO STYLING */
+.holder2 {
+  display: flex;
+  padding: 0;
+}
+.profileTabInfo hr {
+  margin-right: 20px;
+  border: 1px solid #8f94a5;
+}
+.holder2 .holderResult {
+  margin-left: 250px;
+}
+.holder2 .holderAction p {
+  font-size: 17px;
+  font-family: "poppins";
+  font-weight: 500;
+  color: #525e75;
+}
+.holder2 .holderResult p {
+  font-size: 17px;
+  font-family: "poppins";
+  font-weight: 500;
+  color: #525e75;
+  /* color: #8d9199; */
+}
+.studentInfoCard .cards {
+  margin-left: 0;
+  width: 100%;
+}
+.cardBody {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}

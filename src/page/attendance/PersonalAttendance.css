@@ -1,0 +1,188 @@
+/* .studentInfoCard {
+  border: 2px solid red;
+} */
+.personalReport {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr 1.3fr;
+  /* grid-template-columns: repeat(auto-fill, minmax(400px, max-content)) 1.3fr 1.3fr; */
+  grid-template-rows: 9.8fr 1.1fr 0.1fr;
+  gap: 10px 0px;
+  grid-template-areas:
+    "studentInfo attendanceReport attendanceReport"
+    "studentInfo attendanceReport attendanceReport"
+    ". . .";
+}
+.studentInfo {
+  grid-area: studentInfo;
+}
+.attendanceReport {
+  grid-area: attendanceReport;
+}
+
+.studentInfo h2 {
+  margin-left: 10px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: "Ubuntu", sans-serif;
+}
+.studentInfo h2::after {
+  content: "";
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95px;
+  height: 7px;
+
+  background-color: blue;
+}
+.attendanceReport h2 {
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-bottom: 30px;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: "Ubuntu", sans-serif;
+}
+.attendanceReport h2::after {
+  content: "";
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 95px;
+  height: 7px;
+
+  background-color: blue;
+}
+.personalReport {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+/* .personalReport::before {
+  content: "";
+  position: absolute;
+  width: 10%;
+  height: 8px;
+  background-color: blueviolet;
+  border-top-left-radius: 10px;
+} */
+.attendanceReport {
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+.studentInfoCard .cards {
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  transition: 0.3s;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+.cards:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.cardBody {
+  padding: 2px 16px;
+}
+.cardImageCont {
+  cursor: pointer;
+  position: relative;
+  padding: 10px 20px;
+  background: white;
+  font-size: 28px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transition: all 1s;
+}
+.cardImageCont:after,
+.cardImageCont:before {
+  content: " ";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  border: 0px solid #fff;
+  transition: all 1s;
+}
+.cardImageCont:after {
+  top: -1px;
+  left: -1px;
+  border-top: 5px solid #4c0033;
+  border-left: 5px solid #e80f88;
+}
+.cardImageCont:before {
+  bottom: -1px;
+  right: -1px;
+  border-bottom: 5px solid #af0171;
+  border-right: 5px solid #790252;
+}
+.cardImageCont:hover {
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+.cardImageCont:hover:before,
+.cardImageCont:hover:after {
+  width: 100%;
+  height: 100%;
+}
+.cardImageCont {
+  background: #d8d8d8;
+  /* height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cardBody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.attendResult {
+  margin-left: 30px;
+}
+.attendAction h3 {
+  font-size: 18px;
+  font-family: "Ubuntu";
+  font-weight: 700;
+  color: rgb(73, 73, 73);
+}
+.attendResult h3 {
+  font-size: 18px;
+  font-family: "Ubuntu";
+  font-weight: 700;
+  color: rgb(73, 73, 73);
+}
+
+/* .attendanceReport Form {
+  display: flex !important;
+  border: 2px solid red;
+} */
+.attendanceRange {
+  display: flex;
+}
+.attendanceRange RangePicker {
+  padding-left: 10px;
+}
+.attendanceRange .ant-select-selector {
+  width: 100%;
+  height: 50px !important;
+  padding: 0 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.attendanceRange .ant-form-item .ant-form-item-control-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 56px !important;
+  margin-left: 30px;
+}
+.attendanceback {
+  float: right;
+  margin-right: 10px;
+  margin-top: -50px;
+}

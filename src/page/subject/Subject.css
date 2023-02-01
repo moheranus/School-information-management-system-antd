@@ -1,0 +1,62 @@
+.subjectInput .ant-input {
+  padding: 4px 11px;
+  color: rgba(0, 0, 0, 0.88);
+  font-size: 17px;
+
+  position: relative;
+  display: inline-block;
+  width: 90%;
+  height: 45px;
+  margin-left: 5%;
+}
+.subjectInput p {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  margin-left: 50px;
+  margin-top: -12px;
+  background-color: #fff;
+  color: #7f8fa6;
+  font-weight: 600;
+  font-family: "Ubuntu", sans-serif;
+}
+.subjectContainer .ant-tabs .ant-tabs-ink-bar {
+  position: absolute;
+  background: blueviolet;
+  pointer-events: none;
+  border: 2px solid blueviolet;
+}
+.ant-form-item .ant-form-item-explain-error {
+  margin-left: 30px;
+  margin-top: -6px;
+}
+.courseId h1 {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border: 1px solid #d9d9d9;
+  height: 50px;
+  width: 90%;
+  margin-left: 5%;
+  border-radius: 6px;
+  padding-left: 20px;
+}
+
+.offerInfo {
+  margin-top: 50px;
+  /* margin-left: 20px; */
+}
+.offerInfo p {
+  background: none;
+  color: #49525e;
+  font-size: 20px;
+  z-index: auto;
+  margin-left: 22px;
+}
+.courseOfferList {
+  /* border: 2px solid; */
+  padding-top: 30px;
+  margin-left: 22px;
+}

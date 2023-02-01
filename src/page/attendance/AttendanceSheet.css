@@ -1,0 +1,48 @@
+.attendanceSheet {
+  display: grid;
+  grid-template-columns: 1.3fr 0.1fr 5.3fr;
+  grid-template-rows: 1fr 1.5fr 9.4fr;
+  gap: 0px 10px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "attendanceHeader attendanceHeader attendanceHeader"
+    "attendanceHeader attendanceHeader attendanceHeader"
+    "attendanceTableCont attendanceTableCont attendanceTableCont";
+}
+
+.attendanceHeader {
+  grid-area: attendanceHeader;
+  /* border: 2px solid red; */
+  float: right;
+}
+
+.attendanceTableCont {
+  grid-area: attendanceTableCont;
+}
+.anttendanceTab {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 10px;
+}
+.anttendanceTab::before {
+  content: "";
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 10px;
+  border-top-left-radius: 10px;
+  background-color: blueviolet;
+  margin-top: -13px;
+  margin-left: -10px;
+}
+.holder2 {
+  /* margin-top: -50px; */
+  float: right;
+  margin-right: 20px;
+}
+.attendanceAction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
