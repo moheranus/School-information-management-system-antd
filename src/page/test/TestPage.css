@@ -28,3 +28,10 @@
   pointer-events: none;
   border: 2px solid blueviolet;
 }
+.ant-select-multiple .ant-select-selection-item-remove > * {
+  line-height: 1;
+}
+.anticon-close {
+  font-size: 20px !important;
+  font-weight: 500;
+}

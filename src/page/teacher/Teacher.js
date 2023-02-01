@@ -13,7 +13,7 @@ import {
   Checkbox,
   Row,
 } from "antd";
-// import "./Subject.css";
+// import "./Teacher.css";
 import {
   DownCircleOutlined,
   PlusOutlined,
@@ -83,7 +83,7 @@ const EditableCell = ({
   );
 };
 
-function Subject() {
+function Teacher() {
   const [searchedText, setSearchedText] = useState("");
   const [form] = Form.useForm();
   const [data, setData] = useState(originData);
@@ -646,20 +646,20 @@ function Subject() {
                         }}
                       >
                         {/* <Button
-                          type="primary"
-                          htmlType="submit"
-                          style={{
-                            display: "flex",
-                            justifyContent: "center",
-                            alignItems: "center",
-                            fontSize: "17px",
-                            fontFamily: "Ubuntu",
-                            fontWeight: "700",
-                            background: "#9400ff",
-                          }}
-                        >
-                          Assign
-                        </Button> */}
+                            type="primary"
+                            htmlType="submit"
+                            style={{
+                              display: "flex",
+                              justifyContent: "center",
+                              alignItems: "center",
+                              fontSize: "17px",
+                              fontFamily: "Ubuntu",
+                              fontWeight: "700",
+                              background: "#9400ff",
+                            }}
+                          >
+                            Assign
+                          </Button> */}
                       </div>
 
                       <Table
@@ -685,4 +685,4 @@ function Subject() {
   );
 }
 
-export default Subject;
+export default Teacher;

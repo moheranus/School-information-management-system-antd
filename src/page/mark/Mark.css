@@ -63,9 +63,10 @@
 
 .anticon-close {
   margin-top: -8px;
-  margin-left: -7px;
-  font-size: 30px;
+  /* margin-left: -7px; */
+  font-size: 18px;
   font-weight: 900;
+  color: #790252;
 }
 .cardDrawer .ant-drawer-right.ant-drawer-open .ant-drawer-content-wrapper {
   box-shadow: none;

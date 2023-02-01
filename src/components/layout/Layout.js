@@ -23,6 +23,8 @@ import CollectFee from "../../page/fee/collect/CollectFee";
 import FeeType from "../../page/fee/type/FeeType";
 import Mark from "../../page/mark/Mark";
 import Subject from "../../page/subject/Subject";
+import TestPage2 from "../../page/test/TestPage2";
+import Teacher from "../../page/teacher/Teacher";
 
 const { Header, Content, Footer, Sider } = Layout;
 function getItem(label, key, icon, children) {
@@ -188,6 +190,7 @@ function Contents() {
         <Route path="/classtimetable" element={<ClassTimeTable />} />
         <Route path="/class" element={<Class />} />
         <Route path="/test" element={<TestPage />} />
+        <Route path="/test2" element={<TestPage2 />} />
         <Route path="/attendancesheet" element={<AttendanceSheet />} />
         <Route path="/personalattendance" element={<PersonalAttendance />} />
         <Route path="/fee" element={<Fee />} />
@@ -195,6 +198,7 @@ function Contents() {
         <Route path="/feetype" element={<FeeType />} />
         <Route path="/mark" element={<Mark />} />
         <Route path="/subject" element={<Subject />} />
+        <Route path="/addteacher" element={<Teacher />} />
       </Routes>
     </div>
   );
