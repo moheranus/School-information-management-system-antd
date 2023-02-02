@@ -14,11 +14,7 @@ import {
   Row,
 } from "antd";
 import "./Subject.css";
-import {
-  DownCircleOutlined,
-  PlusOutlined,
-  ExclamationCircleFilled,
-} from "@ant-design/icons";
+import { DownCircleOutlined } from "@ant-design/icons";
 import { useState } from "react";
 
 const originData = [
@@ -55,11 +51,6 @@ const originData = [
   },
 ];
 
-// for (let i = 0; i < 100; i++) {
-//   originData.push({
-//     key: i.toString(),
-//   });
-// }
 const EditableCell = ({
   editing,
   dataIndex,
@@ -1047,49 +1038,7 @@ function Subject() {
         <Tabs.TabPane tab="Offered Course List" key="offered">
           <div>
             <div className="classAddition">
-              <div className="classAdd">
-                <div class="AddClass">
-                  <Form
-                    onFinish={(values) => {
-                      console.log(values);
-                    }}
-                  >
-                    <div className="classBtnTwo">
-                      <Button
-                        type="primary"
-                        htmlType="submit"
-                        style={{
-                          backgroundColor: "#6F38C5",
-                          marginTop: "-20px",
-                          display: "flex",
-                          justifyContent: "center",
-                          alignItems: "center",
-                        }}
-                      >
-                        Submit
-                      </Button>
-                    </div>
-                    <h2> Edit Offered Courses</h2>
-
-                    <div className="subjectInput">
-                      {/* <div className="offerInfo">
-                        <p>Offer the Following course for grade 1</p>
-                      </div> */}
-                      <div>
-                        <div className="courseOfferList">
-                          <div
-                            style={{
-                              marginTop: -70,
-                              float: "right",
-                              marginBottom: 16,
-                              marginRight: "20px",
-                            }}
-                          ></div>
-                        </div>
-                      </div>
-                    </div>
-                  </Form>
-                </div>
+              <div className="classAdds">
                 <div class="classList">
                   <h2>Offered Courses</h2>
                   <div className="classForm">
