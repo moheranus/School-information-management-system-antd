@@ -61,6 +61,167 @@ const classSectionData = [
     students: "40",
   },
 ];
+
+//* ********************************************************
+
+// CLASS AND SUBECT REPORT TABLE DATA IS HERE
+
+//******************************************************** *
+
+const classSubjectData = [
+  {
+    num: "1",
+    grade: "Grade 1",
+    section: " Section (A)",
+    subject: "English",
+    teacher: "Solomon Tesfaye",
+    time: (
+      <div className="subjectTimeList">
+        <ul>
+          <li>Monday 8:30 AM To 9:30 AM</li>
+          <li>Tuesday 9:00 AM To 10:00 AM</li>
+          <li>Thursday 9:30 AM To 10:30 AM</li>
+          <li>Friday 8:00 AM To 9:00 AM</li>
+          <li>Friday 8:00 AM To 9:00 AM</li>
+        </ul>
+      </div>
+    ),
+    room: "102",
+  },
+  {
+    num: "2",
+    grade: "Grade 1",
+    section: " Section (A)",
+    subject: "Mathematics",
+    teacher: "Igida Arega",
+    time: (
+      <div className="subjectTimeList">
+        <ul>
+          <li>Monday 9:30 AM To 10:30 AM</li>
+          <li>Tuesday 9:30 AM To 10:30 AM</li>
+          <li>Thursday 9:30 AM To 10:30 AM</li>
+          <li>Friday 9:30 AM To 10:30 AM</li>
+          <li>Friday 9:30 AM To 10:30 AM</li>
+        </ul>
+      </div>
+    ),
+    room: "103",
+  },
+  {
+    num: "3",
+    grade: "Grade 1",
+    section: " Section (A)",
+    subject: "General Science",
+    teacher: "John Fenta",
+    time: (
+      <div className="subjectTimeList">
+        <ul>
+          <li>Monday 10:30 AM To 11:30 AM</li>
+          <li>Tuesday 10:30 AM To 11:30 AM</li>
+          <li>Thursday 10:30 AM To 11:30 AM</li>
+          <li>Friday 10:30 AM To 11:30 AM</li>
+          <li>Friday 10:30 AM To 11:30 AM</li>
+        </ul>
+      </div>
+    ),
+    room: "103",
+  },
+  {
+    num: "4",
+    grade: "Grade 1",
+    section: " Section (B)",
+    subject: "General Science",
+    teacher: "Kasa Debisa",
+    time: (
+      <div className="subjectTimeList">
+        <ul>
+          <li>Monday 10:30 AM To 11:30 AM</li>
+          <li>Tuesday 10:30 AM To 11:30 AM</li>
+          <li>Thursday 10:30 AM To 11:30 AM</li>
+          <li>Friday 10:30 AM To 11:30 AM</li>
+          <li>Friday 10:30 AM To 11:30 AM</li>
+        </ul>
+      </div>
+    ),
+    room: "104",
+  },
+  {
+    num: "5",
+    grade: "Grade 1",
+    section: " Section (B)",
+    subject: "Mathematics",
+    teacher: "Demeke Ingida",
+    time: (
+      <div className="subjectTimeList">
+        <ul>
+          <li>Monday 10:30 AM To 11:30 AM</li>
+          <li>Tuesday 10:30 AM To 11:30 AM</li>
+          <li>Thursday 10:30 AM To 11:30 AM</li>
+          <li>Friday 10:30 AM To 11:30 AM</li>
+          <li>Friday 10:30 AM To 11:30 AM</li>
+        </ul>
+      </div>
+    ),
+    room: "104",
+  },
+  {
+    num: "6",
+    grade: "Grade 1",
+    section: " Section (B)",
+    subject: "english",
+    teacher: "Fantahun Diriba",
+    time: (
+      <div className="subjectTimeList">
+        <ul>
+          <li>Monday 10:30 AM To 11:30 AM</li>
+          <li>Tuesday 10:30 AM To 11:30 AM</li>
+          <li>Thursday 10:30 AM To 11:30 AM</li>
+          <li>Friday 10:30 AM To 11:30 AM</li>
+          <li>Friday 10:30 AM To 11:30 AM</li>
+        </ul>
+      </div>
+    ),
+    room: "104",
+  },
+  {
+    num: "7",
+    grade: "Grade 2",
+    section: " Section (A)",
+    subject: "Mathematics",
+    teacher: "Demeke Ingida",
+    time: (
+      <div className="subjectTimeList">
+        <ul>
+          <li>Monday 10:30 AM To 11:30 AM</li>
+          <li>Tuesday 10:30 AM To 11:30 AM</li>
+          <li>Thursday 10:30 AM To 11:30 AM</li>
+          <li>Friday 10:30 AM To 11:30 AM</li>
+          <li>Friday 10:30 AM To 11:30 AM</li>
+        </ul>
+      </div>
+    ),
+    room: "104",
+  },
+  {
+    num: "8",
+    grade: "Grade 2",
+    section: " Section (B)",
+    subject: "Mathematics",
+    teacher: "Demeke Ingida",
+    time: (
+      <div className="subjectTimeList">
+        <ul>
+          <li>Monday 10:30 AM To 11:30 AM</li>
+          <li>Tuesday 10:30 AM To 11:30 AM</li>
+          <li>Thursday 10:30 AM To 11:30 AM</li>
+          <li>Friday 10:30 AM To 11:30 AM</li>
+          <li>Friday 10:30 AM To 11:30 AM</li>
+        </ul>
+      </div>
+    ),
+    room: "104",
+  },
+];
 //* ********************************************************
 
 //STUDENT LIST PER CLASS TABLE DATA
@@ -150,6 +311,7 @@ const studentListData = [
 ];
 function Report() {
   const [searchedText, setSearchedText] = useState("");
+  const [searchedClassSubjectText, setSearchedClassSubjectText] = useState("");
   const [open, setOpen] = useState(false);
   const [placement, setPlacement] = useState("right");
   const showDrawer = () => {
@@ -243,6 +405,54 @@ function Report() {
     },
   ];
 
+  // ********************************************************
+  // ******************************************************** *
+
+  //  CLASS AND SUBJECT COLUMNS IS HERE
+
+  // ********************************************************
+  // ******************************************************** *
+  const classSubjectColumns = [
+    {
+      title: "S.No",
+      dataIndex: "num",
+      width: "100px",
+    },
+    {
+      title: "Grade",
+      dataIndex: "grade",
+      // width: "10%",
+      filteredValue: [searchedClassSubjectText],
+      onFilter: (value, record) => {
+        return String(record.grade).toLowerCase().includes(value.toLowerCase());
+      },
+    },
+    {
+      title: "Section",
+      dataIndex: "section",
+      width: "15%",
+    },
+    {
+      title: "Subject",
+      dataIndex: "subject",
+      // width: "10%",
+    },
+    {
+      title: "Teacher",
+      dataIndex: "teacher",
+      // width: "15%",
+    },
+    {
+      title: "Time",
+      dataIndex: "time",
+      width: "25%",
+    },
+    {
+      title: "Room No",
+      dataIndex: "room",
+      width: "100px",
+    },
+  ];
   return (
     <div className="subjectContainer">
       {/* ********************************************************
@@ -283,7 +493,7 @@ function Report() {
                 columns={classSectionColumn}
                 dataSource={classSectionData}
                 scroll={{
-                  y: 350,
+                  y: 400,
                   // x: '100vw',
                 }}
                 style={{
@@ -359,7 +569,7 @@ function Report() {
                         columns={studentListColumns}
                         dataSource={studentListData}
                         scroll={{
-                          y: 350,
+                          y: 450,
                           // x: '100vw',
                         }}
                         style={{
@@ -373,8 +583,51 @@ function Report() {
             </div>
           </div>
         </Tabs.TabPane>
-        {/* SECOND TAB HERE */}
-        <Tabs.TabPane tab="Offer Courses" key="courses"></Tabs.TabPane>
+        {/* *************************************************************************
+         **************************************************************************/}
+
+        {/* THE SECOND TABS WHICH CONTAINS INFORMATION LIKE
+                CLASS, SECTION, SUBJECT, TEACHER, TIME , AND ROOM
+             */}
+
+        {/* *************************************************************************
+         **************************************************************************/}
+        <Tabs.TabPane tab="Class & Subject" key="subject">
+          <div className="classSectionReportCont">
+            <div className="classSectionTitle">
+              <h2>Class & Subject Report </h2>
+            </div>
+            <div className="classSectionSearch">
+              <Input.Search
+                placeholder="Search here... eg type 2 for grade 2"
+                style={{
+                  marginLeft: "20px",
+                  width: "30%",
+                  marginBottom: "10px",
+                }}
+                onSearch={(value) => {
+                  setSearchedClassSubjectText(value);
+                }}
+                onchange={(e) => {
+                  setSearchedClassSubjectText(e.target.value);
+                }}
+              />
+            </div>
+            <div className="classSectionBody">
+              <Table
+                columns={classSubjectColumns}
+                dataSource={classSubjectData}
+                scroll={{
+                  y: 450,
+                  // x: '100vw',
+                }}
+                style={{
+                  margin: "20px",
+                }}
+              />
+            </div>
+          </div>
+        </Tabs.TabPane>
         <Tabs.TabPane tab="Offered Course List" key="offered"></Tabs.TabPane>
       </Tabs>
     </div>
