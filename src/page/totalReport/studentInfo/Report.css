@@ -1,0 +1,65 @@
+.reportMenuContainer {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  /* grid-template-rows: 0.1fr 0.1fr 0.1fr; */
+  gap: 0px 0px;
+  grid-template-areas:
+    "menu1 menu2 menu3"
+    ". . ."
+    ". . .";
+}
+
+.menu1 {
+  grid-area: menu1;
+}
+.menu2 {
+  grid-area: menu2;
+}
+.menu3 {
+  grid-area: menu3;
+}
+.reportBody {
+  width: 100%;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.menu1 ul li {
+  list-style-type: none;
+  margin-top: 20px;
+  font-family: "Ubuntu";
+  font-size: 20px;
+  font-weight: 700;
+  color: #4e545e;
+}
+.menu1 ul li:hover {
+  color: #46045a;
+  cursor: pointer;
+}
+.menu2 ul li {
+  list-style-type: none;
+  margin-top: 20px;
+  font-family: "Ubuntu";
+  font-size: 20px;
+  font-weight: 700;
+  color: #4e545e;
+}
+.menu2 ul li:hover {
+  color: #46045a;
+  cursor: pointer;
+}
+.menu3 ul li {
+  list-style-type: none;
+  margin-top: 20px;
+  font-family: "Ubuntu";
+  font-size: 20px;
+  font-weight: 700;
+  color: #4e545e;
+}
+.menu3 ul li:hover {
+  color: #46045a;
+  cursor: pointer;
+}
+.reportBody {
+  margin-top: 10px;
+}

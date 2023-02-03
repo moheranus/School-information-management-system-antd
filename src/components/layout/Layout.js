@@ -1,5 +1,9 @@
 import { Routes, Route, useNavigate } from "react-router-dom";
-import { MenuUnfoldOutlined, MenuFoldOutlined } from "@ant-design/icons";
+import {
+  MenuUnfoldOutlined,
+  MenuFoldOutlined,
+  LineChartOutlined,
+} from "@ant-design/icons";
 import { Breadcrumb, Layout, Menu, theme } from "antd";
 import React, { useState } from "react";
 import "./Layout.css";
@@ -25,6 +29,9 @@ import Mark from "../../page/mark/Mark";
 import Subject from "../../page/subject/Subject";
 import TestPage2 from "../../page/test/TestPage2";
 import Teacher from "../../page/teacher/Teacher";
+
+import Report from "../../page/totalReport/studentInfo/Report";
+import ClassSection from "../../page/totalReport/classSection/ClassSection";
 
 const { Header, Content, Footer, Sider } = Layout;
 function getItem(label, key, icon, children) {
@@ -66,6 +73,10 @@ const items = [
   ]),
   getItem("Mark", "sub8", <RiMoneyDollarBoxFill />, [
     getItem("Mark Sheet", "/mark"),
+    getItem("m", "/marks"),
+  ]),
+  getItem("Report", "sub9", <LineChartOutlined />, [
+    getItem("Student Report", "/report"),
     getItem("m", "/marks"),
   ]),
 ];
@@ -199,6 +210,8 @@ function Contents() {
         <Route path="/mark" element={<Mark />} />
         <Route path="/subject" element={<Subject />} />
         <Route path="/addteacher" element={<Teacher />} />
+        <Route path="/report" element={<Report />} />
+        <Route path="/classsection" element={<ClassSection />} />
       </Routes>
     </div>
   );
