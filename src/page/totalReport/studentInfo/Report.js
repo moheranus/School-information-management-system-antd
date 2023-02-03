@@ -309,9 +309,54 @@ const studentListData = [
     phone: "0939052939",
   },
 ];
+//* ********************************************************
+
+//STUDENT TEACHER RATIO TABLE DATA IS HERE
+
+//******************************************************** *
+
+const studentTeacherRatioData = [
+  {
+    grade: " Grade 1",
+    section: "A",
+    totalStudent: "18",
+    totalTeacher: "2",
+    ratio: "1:0.11",
+  },
+  {
+    grade: " Grade 1",
+    section: "B",
+    totalStudent: "3",
+    totalTeacher: "2",
+    ratio: "1:0.67",
+  },
+  {
+    grade: " Grade 2",
+    section: "A",
+    totalStudent: "14",
+    totalTeacher: "2",
+    ratio: "1:0.11",
+  },
+  {
+    grade: " Grade 2",
+    section: "B",
+    totalStudent: "18",
+    totalTeacher: "2",
+    ratio: "1:0.11",
+  },
+  {
+    grade: " Grade 3",
+    section: "A",
+    totalStudent: "18",
+    totalTeacher: "2",
+    ratio: "1:0.11",
+  },
+];
 function Report() {
   const [searchedText, setSearchedText] = useState("");
   const [searchedClassSubjectText, setSearchedClassSubjectText] = useState("");
+  const [searchStudentTeacherRatio, setSearchStudentTeacherRatio] =
+    useState("");
   const [open, setOpen] = useState(false);
   const [placement, setPlacement] = useState("right");
   const showDrawer = () => {
@@ -359,7 +404,7 @@ function Report() {
               type="primary"
               style={{
                 width: "100px",
-                backgroundColor: "#002E94",
+                backgroundColor: "#4096ff;",
               }}
             >
               View
@@ -453,6 +498,43 @@ function Report() {
       width: "100px",
     },
   ];
+
+  // ********************************************************
+  // ******************************************************** *
+
+  //  STUDENT AND TEACHER RATIO REPORT TABLE COLUMN IS  HERE
+
+  // ********************************************************
+  // ******************************************************** *
+
+  const studentTeacherRatioColumns = [
+    {
+      title: "Grade",
+      dataIndex: "grade",
+      filteredValue: [searchStudentTeacherRatio],
+      onFilter: (value, record) => {
+        return String(record.grade).toLowerCase().includes(value.toLowerCase());
+      },
+    },
+
+    {
+      title: "Section",
+      dataIndex: "section",
+    },
+    {
+      title: "Total Student",
+      dataIndex: "totalStudent",
+    },
+    {
+      title: "Total Assigned Teacher",
+      dataIndex: "totalTeacher",
+    },
+    {
+      title: "Student-Teacher Ratio",
+      dataIndex: "ratio",
+    },
+  ];
+
   return (
     <div className="subjectContainer">
       {/* ********************************************************
@@ -628,7 +710,51 @@ function Report() {
             </div>
           </div>
         </Tabs.TabPane>
-        <Tabs.TabPane tab="Offered Course List" key="offered"></Tabs.TabPane>
+        {/* *************************************************************************
+         **************************************************************************/}
+
+        {/* THE THIRD TABS WHICH CONTAINS INFORMATION LIKE
+               STUDENT TO TEACHER RATIO
+             */}
+
+        {/* *************************************************************************
+         **************************************************************************/}
+        <Tabs.TabPane tab="Student Teacher Ratio" key="studentTeacher">
+          <div className="classSectionReportCont">
+            <div className="classSectionTitle">
+              <h2>Students Teacher Ratio Report</h2>
+            </div>
+            <div className="classSectionSearch">
+              <Input.Search
+                placeholder="Search here... eg type 2 for grade 2"
+                style={{
+                  marginLeft: "20px",
+                  width: "30%",
+                  marginBottom: "10px",
+                }}
+                onSearch={(value) => {
+                  setSearchStudentTeacherRatio(value);
+                }}
+                onchange={(e) => {
+                  setSearchStudentTeacherRatio(e.target.value);
+                }}
+              />
+            </div>
+            <div className="classSectionBody">
+              <Table
+                columns={studentTeacherRatioColumns}
+                dataSource={studentTeacherRatioData}
+                scroll={{
+                  y: 450,
+                  // x: '100vw',
+                }}
+                style={{
+                  margin: "20px",
+                }}
+              />
+            </div>
+          </div>
+        </Tabs.TabPane>
       </Tabs>
     </div>
   );
