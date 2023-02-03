@@ -13,6 +13,7 @@ import { FaChalkboardTeacher } from "react-icons/fa";
 import { FaUserCheck } from "react-icons/fa";
 import { SiMicrosoftacademic } from "react-icons/si";
 import { RiMoneyDollarBoxFill } from "react-icons/ri";
+import { AiOutlineSchedule } from "react-icons/ai";
 import Registration from "../../page/student/registration/Registration";
 import StudentDetail from "../../page/student/studentDetail/StudentDetail";
 import ViewStudent from "../../page/student/studentDetail/viewStudent/ViewStudent";
@@ -32,6 +33,7 @@ import Teacher from "../../page/teacher/Teacher";
 
 import Report from "../../page/totalReport/studentInfo/Report";
 import ClassSection from "../../page/totalReport/classSection/ClassSection";
+import Schedule from "../../page/exam/examSchedule/Schedule";
 
 const { Header, Content, Footer, Sider } = Layout;
 function getItem(label, key, icon, children) {
@@ -77,6 +79,10 @@ const items = [
   ]),
   getItem("Report", "sub9", <LineChartOutlined />, [
     getItem("Student Report", "/report"),
+    getItem("m", "/marks"),
+  ]),
+  getItem("Exam", "sub9", <AiOutlineSchedule />, [
+    getItem("Exam Schedule", "/schedule"),
     getItem("m", "/marks"),
   ]),
 ];
@@ -212,6 +218,7 @@ function Contents() {
         <Route path="/addteacher" element={<Teacher />} />
         <Route path="/report" element={<Report />} />
         <Route path="/classsection" element={<ClassSection />} />
+        <Route path="/schedule" element={<Schedule />} />
       </Routes>
     </div>
   );
