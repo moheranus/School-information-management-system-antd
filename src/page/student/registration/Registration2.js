@@ -1,5 +1,5 @@
 import React from "react";
-import "./TestPage2.css";
+import "./Registration2.css";
 import {
   Button,
   Form,
@@ -39,7 +39,7 @@ const steps = [
     // content: "Last-content",
   },
 ];
-function TestPage2() {
+function Registration2() {
   const { token } = theme.useToken();
   const [current, setCurrent] = useState(0);
   const [formData, setFormData] = useState([]);
@@ -898,4 +898,4 @@ function TestPage2() {
   );
 }
 
-export default TestPage2;
+export default Registration2;

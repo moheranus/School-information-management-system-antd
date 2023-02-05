@@ -1,10 +1,8 @@
-
-
-.addStudent{
-    margin-top: 30px;
-    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+.addStudent {
+  margin-top: 30px;
+  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
      */
-     box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
 }
 /* .studentHeader{
     margin-left: 32px;
@@ -16,127 +14,116 @@
     font-weight: 700;
   font-family: 'Ubuntu', sans-serif;
 } */
-.studentForm .ant-steps-item-title{
-    /* color:#506D84 !important; */
-    font-size: 17px;
-    font-weight: 600;
-  font-family: 'Ubuntu', sans-serif;
+.studentForm .ant-steps-item-title {
+  /* color:#506D84 !important; */
+  font-size: 17px;
+  font-weight: 600;
+  font-family: "Ubuntu", sans-serif;
 }
-.studentForm .ant-steps-icon{
-    color: #0779E4!important;
-   
+.studentForm .ant-steps-icon {
+  color: #0779e4 !important;
 }
-.studentInfos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+.studentInfos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.studentInfos Form{
-    display: block;
+.studentInfos Form {
+  display: block;
 }
 
-
-
-.studentInfos .ant-input{
-    color:#27496D;
-    margin-top: 17px;
-    font-size: 18px;
-    border: 2px solid #7f8fa6;
-    padding: 15px;
-    max-width: 550px;
-    font-weight: 600;
-  font-family: 'Ubuntu', sans-serif;
-  
+.studentInfos .ant-input {
+  color: #27496d;
+  margin-top: 17px;
+  font-size: 18px;
+  border: 2px solid #7f8fa6;
+  padding: 15px;
+  max-width: 550px;
+  font-weight: 600;
+  font-family: "Ubuntu", sans-serif;
 }
 
-
-.studentInfos p{
-    font-weight: 600;
-  font-family: 'Ubuntu', sans-serif;
-    position: absolute;
-    padding: 10px;
-    margin-left: 20px;
-    margin-top: -5px;
-    background-color: #fff;
-    font-size: 1rem;
-    color:#7f8fa6;
-    z-index: 1;
-    /* text-transform: uppercase; */
-    /* pointer-events: none; */
-    /* transition: 0.6s; */
+.studentInfos p {
+  font-weight: 600;
+  font-family: "Ubuntu", sans-serif;
+  position: absolute;
+  padding: 10px;
+  margin-left: 20px;
+  margin-top: -5px;
+  background-color: #fff;
+  font-size: 1rem;
+  color: #7f8fa6;
+  z-index: 1;
+  /* text-transform: uppercase; */
+  /* pointer-events: none; */
+  /* transition: 0.6s; */
 }
 /* .studentInfos .ant-form-item .ant-form-item-explain-error {
     color: #D8345F;
     z-index: 2;
   } */
 
+.studentInfos .ant-form-item .ant-form-item-label > label {
+  position: absolute;
+  display: inline-flex;
+  display: block;
+  align-items: center;
 
-  .studentInfos .ant-form-item .ant-form-item-label > label {
-    position: absolute;
-    display: inline-flex;
-    display: block;
-    align-items: center;
-    
-    max-width: 100%;
-   
-    color: rgba(0, 0, 0, 0.88);
-    font-size: 14px;
-    
-    
-  }
+  max-width: 100%;
 
-
-.continueBtnCon{
-    /* margin-top: 20px; */
-    margin-bottom: 140px;
+  color: rgba(0, 0, 0, 0.88);
+  font-size: 14px;
 }
 
-.continueBtnCon .btn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* background: none; */
-    padding: 25px 230px;
-    font-size: 20px;
-    font-family: 'Ubuntu', sans-serif;
-    border: 1px solid #3498db;
-    /* color: #3498db; */
-    cursor: pointer;
-    transition: 0.8s;
-    position: relative;
-    overflow: hidden;
-    margin-top: 20px;
-    background: #3D5EE1;
+.continueBtnCon {
+  /* margin-top: 20px; */
+  margin-bottom: 140px;
 }
 
-.studentInfos .column3 .ant-select-selector{
+.continueBtnCon .btn {
   display: flex;
   justify-content: center;
   align-items: center;
- 
+  /* background: none; */
+  padding: 25px 230px;
+  font-size: 20px;
+  font-family: "Ubuntu", sans-serif;
+  border: 1px solid #3498db;
+  /* color: #3498db; */
+  cursor: pointer;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+  margin-top: 20px;
+  background: #3d5ee1;
+}
+
+.studentInfos .column3 .ant-select-selector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   height: 60px;
   border: 2px solid #5b5f97;
   font-size: 18px;
-  color:#27496D;
-  
+  color: #27496d;
+
   margin-left: 10px;
 }
-.uploadStudentImage{
+.uploadStudentImage {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 90px;
 }
-.uploadStudentImage .ant-upload-wrapper{
+.uploadStudentImage .ant-upload-wrapper {
   font-weight: 600;
-  font-family: 'Ubuntu', sans-serif;
-    
-    
-    font-size: 1.2rem;
-    color:#7f8fa6;
+  font-family: "Ubuntu", sans-serif;
+
+  font-size: 1.2rem;
+  color: #7f8fa6;
 }
-.uploadStudentImage p{
+.uploadStudentImage p {
   margin-top: 70px;
   font-size: 20px;
 }
