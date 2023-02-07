@@ -204,7 +204,10 @@ function Class() {
                 Save
               </Button>
             </div>
-            <h2>Add Class</h2>
+            <div className="wrapper">
+              <h2>Add Class</h2>
+            </div>
+
             {/* <div className='classBtnTwo'>
                          <Button type='primary'>Save</Button>
                          <Button type='primary'>Add Section</Button>

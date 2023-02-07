@@ -30,6 +30,7 @@ const originData = [
     coursename: "English ",
     grade: "Grade 1",
   },
+
   {
     key: "2",
     cid: "AMHRG2",
@@ -48,6 +49,18 @@ const originData = [
     coursename: "Geography",
     grade: "Grade 9",
     notoffered: "physics",
+  },
+  {
+    key: "5",
+    cid: "SCIE1",
+    coursename: "Science",
+    grade: "Grade 1",
+  },
+  {
+    key: "6",
+    cid: "AMHR1",
+    coursename: "Amharic",
+    grade: "Grade 1",
   },
 ];
 

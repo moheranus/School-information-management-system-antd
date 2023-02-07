@@ -30,11 +30,13 @@ import Mark from "../../page/mark/Mark";
 import Subject from "../../page/subject/Subject";
 import TestPage2 from "../../page/test/TestPage2";
 import Teacher from "../../page/teacher/Teacher";
-
+import Teacher2 from "../../page/teacher/Teacher2";
 import Report from "../../page/totalReport/studentInfo/Report";
 import ClassSection from "../../page/totalReport/classSection/ClassSection";
 import Schedule from "../../page/exam/examSchedule/Schedule";
 import Registration2 from "../../page/student/registration/Registration2";
+import Report2 from "../../page/report/Report2";
+import Student2 from "../../page/student/student2/Student2";
 
 const { Header, Content, Footer, Sider } = Layout;
 function getItem(label, key, icon, children) {
@@ -55,10 +57,12 @@ const items = [
     getItem("Registration", "/registration"),
     getItem("Registration2", "/reg2"),
     getItem("Student Detail", "/studentdetail"),
+    getItem("Student2", "/student2"),
   ]),
   getItem("Teacher", "sub3", <FaChalkboardTeacher />, [
     getItem("Add Teacher", "/addteacher"),
     getItem("Assign Teacher", "/assignteacher"),
+    getItem("Teacher 2", "/teacher2"),
   ]),
   getItem("Academics", "sub4", <SiMicrosoftacademic />, [
     getItem("Class Timetable", "/classtimetable"),
@@ -81,7 +85,7 @@ const items = [
   ]),
   getItem("Report", "sub9", <LineChartOutlined />, [
     getItem("Student Report", "/report"),
-    getItem("m", "/re"),
+    getItem("Report2", "/report2"),
   ]),
   getItem("Exam", "sub10", <AiOutlineSchedule />, [
     getItem("Exam Schedule", "/schedule"),
@@ -222,6 +226,9 @@ function Contents() {
         <Route path="/classsection" element={<ClassSection />} />
         <Route path="/schedule" element={<Schedule />} />
         <Route path="/reg2" element={<Registration2 />} />
+        <Route path="/report2" element={<Report2 />} />
+        <Route path="/teacher2" element={<Teacher2 />} />
+        <Route path="/student2" element={<Student2 />} />
       </Routes>
     </div>
   );

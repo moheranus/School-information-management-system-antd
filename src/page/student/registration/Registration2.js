@@ -363,9 +363,9 @@ function Registration2() {
                   style={{
                     width: "100%",
                   }}
-                  onChange={(e) => {
+                  onSelect={(value) => {
                     setSiblingSection({
-                      siblingsection: e.target.value,
+                      siblingsection: value,
                     });
                   }}
                   // onChange={handleChange}
@@ -538,8 +538,8 @@ function Registration2() {
                       </p>
                       <Form.Item
                         name="gender"
-                        onChange={(e) => {
-                          setGender({ gender: e.target.value });
+                        onSelect={(value) => {
+                          setGender({ gender: value });
                         }}
                       >
                         <Select
@@ -572,8 +572,8 @@ function Registration2() {
                     </p>
                     <Form.Item name="grade">
                       <Select
-                        onChange={(e) => {
-                          setGrade({ grade: e.target.value });
+                        onSelect={(value) => {
+                          setGrade({ grade: value });
                         }}
                         placeholder="Please Select Grade"
                         style={{
@@ -613,8 +613,8 @@ function Registration2() {
                         style={{
                           width: "100%",
                         }}
-                        onChange={(e) => {
-                          setSection({ section: e.target.value });
+                        onSelect={(value) => {
+                          setSection({ section: value });
                         }}
                         // onChange={handleChange}
                         options={[
