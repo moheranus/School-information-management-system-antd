@@ -1,0 +1,93 @@
+.promoActions .ant-input {
+  margin-top: 10px;
+  padding: 13px 40px;
+}
+.studentPromot {
+  padding: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.promoActions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px;
+  border: 1px solid rgb(185, 185, 185);
+  padding: 20px;
+}
+.promoActions .ant-select-selector {
+  /* width: 100%; */
+  min-width: 250px;
+  height: 50px !important;
+  padding: 0 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Ubuntu";
+  font-size: 16px;
+  font-weight: 600;
+}
+.promoActions p {
+  font-family: "Ubuntu";
+  font-size: 17px;
+  font-weight: 700;
+  color: gray;
+  margin-bottom: 10px;
+}
+.studentPromot .promTitles {
+  font-family: "Ubuntu";
+  font-size: 25px;
+  font-weight: 700;
+  margin-left: 50px;
+  padding-top: 20px;
+  color: #fff;
+}
+.promBtn {
+  /* border: 2px solid red; */
+  margin-left: 50px;
+  margin-bottom: 20px;
+  display: flex;
+}
+.promoTable {
+  margin-top: 10px;
+  padding: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.titleRibon {
+  background-color: #1677ff;
+  height: 70px;
+  margin-left: -25px;
+  border-radius: 20px;
+  border-bottom-left-radius: 0;
+}
+.titleRibon::before {
+  content: "";
+  position: absolute;
+  margin-top: 68px;
+  width: 15px;
+  height: 40px;
+  background-color: #0657c9;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  z-index: 2;
+}
+.titleRibon::after {
+  content: "";
+  position: absolute;
+  margin-top: -10px;
+  width: 15px;
+  height: 15px;
+  background: #1677ff;
+}
+.studCourseReg .ant-select-selector {
+  /* width: 100%; */
+  min-width: 250px;
+  height: 50px !important;
+  padding: 0 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Ubuntu";
+  font-size: 16px;
+  font-weight: 600;
+  border: 1px solid rgb(196, 196, 196) !important;
+}

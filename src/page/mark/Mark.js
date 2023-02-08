@@ -1166,7 +1166,6 @@ function Mark() {
                   rowClassName={() => "rowClassName1"}
                   bordered
                 />
-                ,
               </div>
             </div>
           </Tabs.TabPane>

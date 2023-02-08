@@ -42,7 +42,7 @@
   height: 15px;
 }
 .studentResultTable .ant-table-thead .ant-table-cell {
-  background-color: #790252;
+  background-color: rgb(3, 201, 136);
   font-weight: 700;
   font-family: "Ubuntu", sans-serif;
   color: #fff;
@@ -55,10 +55,10 @@
 } */
 
 .studentResultTable Table {
-  border: 2px solid #790252;
+  border: 2px solid rgb(3, 201, 136);
 }
 .studentResultTable .rowClassName1 td {
-  border: 2px solid #790252;
+  border: 2px solid rgb(3, 201, 136);
 }
 
 .anticon-close {
@@ -73,7 +73,7 @@
 }
 
 .markTable .ant-table-thead .ant-table-cell {
-  background-color: #790252;
+  background-color: rgb(3, 201, 136);
   color: #fff;
   font-size: -21px;
   font-weight: 700;
@@ -253,7 +253,7 @@ THIS MEANS STYLE FOR STUDENT REPORT CARD */
   height: 13px;
 }
 .cardTable .ant-table-thead .ant-table-cell {
-  background-color: #790252;
+  background-color: rgb(3, 201, 136);
   color: #fff;
   font-size: 17px;
   font-family: "Ubuntu", sans-serif;
@@ -266,7 +266,7 @@ THIS MEANS STYLE FOR STUDENT REPORT CARD */
   font-weight: 700;
 }
 .cardTable .rowClassName1 td {
-  border: 2px solid #790252;
+  border: 2px solid rgb(3, 201, 136);
 }
 
 .continuousAssesment span {
