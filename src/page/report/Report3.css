@@ -1,0 +1,220 @@
+.performances {
+  display: grid;
+  grid-template-columns: 1.1fr 1.1fr 0.6fr;
+  grid-template-rows: 0.2fr 0.7fr 1.2fr 3.3fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "titles titles titles"
+    "actions actions barCharts"
+    "tables tables barCharts"
+    "tables tables barCharts";
+}
+.titles {
+  grid-area: titles;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  /* border: 2px solid red; */
+}
+.actions {
+  grid-area: actions;
+  margin-top: 10px;
+  /* padding-left: 25px; */
+  margin-bottom: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  /* border: 2px solid yellow; */
+}
+.barCharts {
+  grid-area: barCharts;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  /* border: 2px solid green; */
+  margin-left: 15px;
+  /* max-height: 90%; */
+  max-height: 79vh;
+  margin-top: 10px;
+  overflow-y: scroll;
+}
+
+.tables {
+  grid-area: tables;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  /* border: 2px solid brown; */
+  max-height: 385px;
+}
+
+.perfomTitles {
+  background-color: #1677ff;
+  height: 70px;
+  margin-left: -25px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  /* margin-right: 20px; */
+}
+.perfomTitles::before {
+  content: "";
+  position: absolute;
+  margin-top: 68px;
+  width: 15px;
+  height: 40px;
+  background-color: #0657c9;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  z-index: 2;
+}
+.perfomTitles::after {
+  content: "";
+  position: absolute;
+  margin-top: 5px;
+  width: 15px;
+  height: 15px;
+  background: #1677ff;
+}
+.perfomTitles h2 {
+  padding-top: 20px;
+  font-family: "Ubuntu";
+  font-size: 25px;
+  font-weight: 700;
+  color: #fff;
+  margin-left: 30px;
+}
+.actionReportCards {
+  width: 23.3%;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  margin-left: 15px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid black; */
+  max-height: 130px;
+}
+.actionReportCards .ant-select-selector {
+  /* width: 100%; */
+  /* min-width: 200px; */
+  height: 40px !important;
+  /* padding: 0 11px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Ubuntu";
+  font-size: 16px;
+  font-weight: 700;
+  color: #50577a;
+}
+.actionReportCards p {
+  display: flex;
+  position: absolute;
+  z-index: 2;
+  margin-left: 15px;
+  margin-top: -11px;
+  font-family: "Ubuntu";
+  font-size: 16px;
+  font-weight: 700;
+  color: #50577a;
+  background-color: #fff;
+}
+
+.actionReportCards .ant-card .ant-card-body {
+  padding: 20px;
+  border-radius: 0 0 8px 8px;
+}
+
+.donutChart {
+  /* border: 2px solid red; */
+  padding-left: 40px;
+}
+.donutChart .text-left {
+  margin-left: -30px;
+  font-family: "Poppins";
+  font-size: 23px;
+  font-weight: 700;
+  color: #50577a;
+  padding-top: 10px;
+}
+.barchart .text-left {
+  margin-left: 10px;
+  font-family: "Poppins";
+  font-size: 23px;
+  font-weight: 700;
+  color: #50577a;
+  padding-top: 10px;
+}
+.performanceTables {
+  margin-top: 10px;
+  /* border: 2px solid red; */
+}
+.performanceTable .ant-table-wrapper .ant-table-thead > tr > th,
+:where(.css-dev-only-do-not-override-1n7nwfa).ant-table-wrapper
+  .ant-table-thead
+  > tr
+  > td {
+  position: relative;
+  color: #fff;
+  font-weight: 600;
+  text-align: start;
+  background: #1677ff;
+  border-bottom: 2px solid #07c5ff;
+}
+.barTitles p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Poppins";
+  font-size: 23px;
+  font-weight: 700;
+  color: #50577a;
+  padding-top: 10px;
+}
+
+.barcards {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  /* border: 2px solid red; */
+  margin: 20px;
+}
+
+.barcards .numb {
+  /* border: 2px solid red; */
+  margin-top: -15px;
+}
+.barcards .numb h2 {
+  /* margin-left: -30px; */
+  font-family: "Poppins";
+  font-size: 23px;
+  font-weight: 700;
+  color: #50577a;
+  /* padding-top: 10px; */
+}
+.barcards .desc {
+  /* border: 2px solid red; */
+  margin-top: -10px;
+}
+.barcards .desc h2 {
+  font-family: "Poppins";
+  font-size: 18px;
+  font-weight: 700;
+  color: #50577a;
+}
+.barcards .result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
+.barcards .result .male {
+  margin-left: 30px;
+}
+.barcards .result .female {
+  margin-left: 30px;
+}
+
+.barcards .result .total h2 {
+  color: rgb(3, 201, 136);
+}
+.barcards .result .male h2 {
+  color: #1677ff;
+}
+.barcards .result .female h2 {
+  color: blueviolet;
+}

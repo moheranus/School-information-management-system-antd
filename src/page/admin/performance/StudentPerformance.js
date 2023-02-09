@@ -344,7 +344,7 @@ function StudentPerformance() {
           />
         </div>
       </div>
-      <div className="examResult">
+      <div className="Result">
         <div className="barchart">
           <h2 className="text-left">Examination Result By Subject</h2>
           <Chart

@@ -40,6 +40,7 @@ import Student2 from "../../page/student/student2/Student2";
 import Register from "../../page/student/student2/register/Register";
 import ReportCard from "../../page/mark/mark2/ReportCard";
 import StudentPerformance from "../../page/admin/performance/StudentPerformance";
+import Report3 from "../../page/report/Report3";
 
 const { Header, Content, Footer, Sider } = Layout;
 function getItem(label, key, icon, children) {
@@ -91,6 +92,7 @@ const items = [
   getItem("Report", "sub9", <LineChartOutlined />, [
     getItem("Student Report", "/report"),
     getItem("Report2", "/report2"),
+    getItem("Report3", "/report3"),
   ]),
   getItem("Exam", "sub10", <AiOutlineSchedule />, [
     getItem("Exam Schedule", "/schedule"),
@@ -237,6 +239,7 @@ function Contents() {
         <Route path="/courseregister" element={<Register />} />
         <Route path="/reportcard" element={<ReportCard />} />
         <Route path="/performance" element={<StudentPerformance />} />
+        <Route path="/report3" element={<Report3 />} />
       </Routes>
     </div>
   );
