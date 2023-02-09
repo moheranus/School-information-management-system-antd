@@ -1,0 +1,204 @@
+.performance {
+  display: grid;
+  grid-template-columns: 1.1fr 1.1fr 0.6fr;
+  grid-template-rows: 0.2fr 0.7fr 1.2fr 2fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "title title title"
+    "action action barChart"
+    "gradeGender examResult barChart"
+    "tables tables barChart";
+}
+.title {
+  grid-area: title;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  /* border: 2px solid red; */
+}
+.action {
+  grid-area: action;
+  margin-top: 10px;
+  /* padding-left: 25px; */
+  margin-bottom: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  /* border: 2px solid yellow; */
+}
+.barChart {
+  grid-area: barChart;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  /* border: 2px solid green; */
+  margin-left: 15px;
+  max-height: 90%;
+  margin-top: 10px;
+  overflow-y: scroll;
+}
+.gradeGender {
+  grid-area: gradeGender;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  /* border: 2px solid blueviolet; */
+}
+.examResult {
+  grid-area: examResult;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  /* border: 2px solid blue; */
+}
+.tables {
+  grid-area: tables;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  /* border: 2px solid brown; */
+  max-height: 385px;
+}
+
+.perfomTitle {
+  background-color: #1677ff;
+  height: 70px;
+  margin-left: -25px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  /* margin-right: 20px; */
+}
+.perfomTitle::before {
+  content: "";
+  position: absolute;
+  margin-top: 68px;
+  width: 15px;
+  height: 40px;
+  background-color: #0657c9;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  z-index: 2;
+}
+.perfomTitle::after {
+  content: "";
+  position: absolute;
+  margin-top: 5px;
+  width: 15px;
+  height: 15px;
+  background: #1677ff;
+}
+.perfomTitle h2 {
+  padding-top: 20px;
+  font-family: "Ubuntu";
+  font-size: 25px;
+  font-weight: 700;
+  color: #fff;
+  margin-left: 30px;
+}
+.actionCards {
+  width: 23.3%;
+  margin: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 2px solid black; */
+  max-height: 130px;
+}
+.actionCards .ant-select-selector {
+  /* width: 100%; */
+  /* min-width: 200px; */
+  height: 40px !important;
+  /* padding: 0 11px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Ubuntu";
+  font-size: 16px;
+  font-weight: 700;
+  color: #50577a;
+}
+.actionCards p {
+  display: flex;
+  position: absolute;
+  z-index: 2;
+  margin-left: 15px;
+  margin-top: -11px;
+  font-family: "Ubuntu";
+  font-size: 16px;
+  font-weight: 700;
+  color: #50577a;
+  background-color: #fff;
+}
+
+.actionCards .numb h2 {
+  margin-left: -30px;
+  font-family: "Poppins";
+  font-size: 30px;
+  font-weight: 700;
+  color: #50577a;
+}
+.actionCards .ant-card .ant-card-body {
+  padding: 5px;
+  border-radius: 0 0 8px 8px;
+}
+.actionCards .desc h2 {
+  margin-left: -30px;
+  font-family: "Poppins";
+  font-size: 25px;
+  font-weight: 500;
+  color: #50577a;
+}
+.donutChart {
+  /* border: 2px solid red; */
+  padding-left: 40px;
+}
+.donutChart .text-left {
+  margin-left: -30px;
+  font-family: "Poppins";
+  font-size: 23px;
+  font-weight: 700;
+  color: #50577a;
+  padding-top: 10px;
+}
+.barchart .text-left {
+  margin-left: 10px;
+  font-family: "Poppins";
+  font-size: 23px;
+  font-weight: 700;
+  color: #50577a;
+  padding-top: 10px;
+}
+.performanceTable {
+  margin-top: 10px;
+  /* border: 2px solid red; */
+}
+.performanceTable .ant-table-wrapper .ant-table-thead > tr > th,
+:where(.css-dev-only-do-not-override-1n7nwfa).ant-table-wrapper
+  .ant-table-thead
+  > tr
+  > td {
+  position: relative;
+  color: #fff;
+  font-weight: 600;
+  text-align: start;
+  background: #1677ff;
+  border-bottom: 2px solid #07c5ff;
+}
+.barTitle p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Poppins";
+  font-size: 23px;
+  font-weight: 700;
+  color: #50577a;
+  padding-top: 10px;
+}
+.barCourseList .arch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20%;
+}
+.barCourse p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: 700;
+  color: #50577a;
+  padding-top: 10px;
+}

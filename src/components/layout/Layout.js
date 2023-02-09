@@ -39,6 +39,7 @@ import Report2 from "../../page/report/Report2";
 import Student2 from "../../page/student/student2/Student2";
 import Register from "../../page/student/student2/register/Register";
 import ReportCard from "../../page/mark/mark2/ReportCard";
+import StudentPerformance from "../../page/admin/performance/StudentPerformance";
 
 const { Header, Content, Footer, Sider } = Layout;
 function getItem(label, key, icon, children) {
@@ -54,6 +55,7 @@ const items = [
     getItem("Admin Dashboard", "3"),
     getItem("Teacher Dashboard", "4"),
     getItem("Student Dashboard", "5"),
+    getItem("Student performance", "/performance"),
   ]),
   getItem("Student", "sub2", <FaUserGraduate />, [
     getItem("Registration", "/registration"),
@@ -234,6 +236,7 @@ function Contents() {
         <Route path="/student2" element={<Student2 />} />
         <Route path="/courseregister" element={<Register />} />
         <Route path="/reportcard" element={<ReportCard />} />
+        <Route path="/performance" element={<StudentPerformance />} />
       </Routes>
     </div>
   );
